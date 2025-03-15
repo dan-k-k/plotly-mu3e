@@ -4,47 +4,71 @@
     <meta charset="utf-8" />
     <title>Mu3e Plotly Plots</title>
     <style>
-        /* Set a fallback list of fonts in case "Helvetica Neue" isn't available */
         body {
             font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-size: 16px; /* Adjust as desired */
+            /* 16px is ~12pt. Increase or decrease as needed. */
+            font-size: 16px;
             margin: 20px;
         }
-        
+
+        /* Title (h1) styling */
         h1 {
-            font-size: 24px;
+            font-size: 24px; /* ~18pt */
             margin-bottom: 10px;
         }
-        
+
+        /* Instructions styling */
         .instructions {
+            font-size: 14px; /* ~10pt */
             margin-bottom: 20px;
             color: #333;
         }
-        
+
         ul {
-            list-style-type: disc;
+            list-style-type: none; /* remove bullets */
+            padding-left: 0;       /* remove default indentation */
         }
-        
+
+        /* Normal list item spacing */
         li {
-            margin-bottom: 5px;
+            margin-bottom: 4px;
+        }
+
+        /* Add a bigger gap (6pt ~ 8px) after the second link in each pair */
+        .pair-gap {
+            margin-bottom: 12px; /* ~9pt or 12px, adjust as desired */
+        }
+
+        /* Link styling */
+        a {
+            font-size: 15px; /* ~11pt */
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <h1>Mu3e Plotly Plots</h1>
     
-    <!-- Add a short paragraph or div for instructions -->
     <div class="instructions">
         View in landscape. Press and drag to change perspective.
     </div>
     
     <ul>
+        <!-- Frame 103 -->
         <li><a href="frame_103_reco_tracks_visualization.html">Frame 103: Reconstructed Tracks</a></li>
-        <li><a href="frame_103_visualization_realfake_missing.html">Frame 103: Generated Graphs</a></li>
+        <li class="pair-gap"><a href="frame_103_visualization_realfake_missing.html">Frame 103: Generated Graphs</a></li>
+        
+        <!-- Frame 158 -->
         <li><a href="frame_158_reco_tracks_visualization.html">Frame 158: Reconstructed Tracks</a></li>
-        <li><a href="frame_158_visualization_realfake_missing.html">Frame 158: Generated Graphs</a></li>
+        <li class="pair-gap"><a href="frame_158_visualization_realfake_missing.html">Frame 158: Generated Graphs</a></li>
+        
+        <!-- Frame 169 -->
         <li><a href="frame_169_reco_tracks_visualization.html">Frame 169: Reconstructed Tracks</a></li>
-        <li><a href="frame_169_visualization_realfake_missing.html">Frame 169: Generated Graphs</a></li>
+        <li class="pair-gap"><a href="frame_169_visualization_realfake_missing.html">Frame 169: Generated Graphs</a></li>
     </ul>
 </body>
 </html>
